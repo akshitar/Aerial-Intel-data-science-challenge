@@ -1,25 +1,13 @@
-import pandas as pd
+import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib import colors
 from sklearn import ensemble
-from sklearn.cross_validation import KFold
 from sklearn.cluster import KMeans
-import matplotlib.gridspec as gridspec
-from sklearn.ensemble import RandomForestRegressor
-from sklearn.grid_search import GridSearchCV   #Perforing grid search
+from sklearn.grid_search import GridSearchCV
 from sklearn.cross_validation import train_test_split
-import datetime
-import math
-from scipy.stats import pearsonr
-from minepy import MINE
-from sklearn.linear_model import Ridge
 from sklearn.cross_validation import train_test_split
 from sklearn.metrics import mean_squared_error
-import numpy as np
-from sklearn.preprocessing import MinMaxScaler
-import statsmodels.api as sm
 from sklearn.metrics import mean_squared_error
-from scipy import cluster
 
 def initializeCol(df, col):
     df[col] = pd.Series()
